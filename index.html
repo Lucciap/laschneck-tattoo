@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bienvenue sur le site de Sophie La Schneck Tattoo ! Découvrez mes créations de tatouage uniques, les conseils et informations pratiques.">
+    <meta name="robots" content="index, follow">
+    <title>Sophie La Schneck Tatouage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">↑</button>
+    <!-- HOME -->
+    <section class="home">
+      <header>
+        <div class="logo-sls">
+          <img
+            src="logos/logoslst.svg"
+            class="logo"
+            alt="logo Sophie LS Tattoo"
+          />
+        </div>
+          <div class="hamburger"><span></span><span></span><span></span></div>
+          <nav>
+          <ul class="menu">
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#gallery">Galerie</a></li>
+              <li><a href="#infos">Infos</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Sophie La Schneck</h1>
+      <h2>Tatoueuse sur Tours(37)</h2>
+      <a href="#" class="gallery-button">Découvrir</a>
+    </section>
+    <img src="img/removebg.png" class="separator" alt="ligne dorée séparation" />
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-title">
+        <h3>À propos</h3>
+      </div>
+      <div class="about-content">
+      <img
+        class="img-about"
+        src="img/image0.jpeg"
+        alt="Sophie La Schneck en train de tatouer"
+      />
+      <div class="about-text">
+        <h4>À propos de moi</h4>
+        <p>
+          Tatoueuse passionnée depuis 2020, je me spécialise dans le Black work
+          et les portraits. Chaque création est unique et j'aime collaborer avec
+          mes clients pour donner vie à leurs idées. Mon objectif est de vous
+          offrir une expérience personnalisée et mémorable.
+        </p>
+        <br />
+        <p>
+          Je serai ravie de vous rencontrer pour discuter de vos projets de
+          tatouage et vous accompagner dans cette aventure artistique. N'hésitez
+          pas à me contacter pour en savoir plus !
+        </p>
+      </div>
+      </div>
+    </section>
+    <img src="img/removebg.png" class="separator" alt="ligne dorée séparation" />
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="gallery-title">
+        <h3>Galerie</h3>
+      </div>
+      <div class="gallery-img">
+        <img src="img/1.jpeg" alt="tatouage scarabé" data-popup="1"/>
+        <img src="img/2.jpeg" alt="tatouage statue romaine" data-popup="2" />
+        <img src="img/3.jpeg" alt="tatouage papillon de nuit" data-popup="3" />
+        <img src="img/4.jpeg" alt="ttatouage Famille Adams" data-popup="4" />
+        <img
+          src="img/5.jpeg"
+          alt="tatouage couteau et visage"
+          data-popup="5"
+        />
+        <img src="img/6.jpeg" alt="tatouage Mercredi Adams" data-popup="6" />
+        <img
+          src="img/7.jpeg"
+          alt="Tatouage scarabé et visage"
+          data-popup="7"
+        />
+        <img src="img/8.jpeg" alt="tatouage crane" data-popup="8" />
+        <img src="img/9.jpeg" alt="tatouage Maléfique Disney" data-popup="9" />
+        <img
+          src="img/10.jpeg"
+          alt="tatouage bouteille de parfum"
+          data-popup="10"
+        />
+        <img src="img/11.jpeg" alt="tatouage araignée" data-popup="11" />
+        <img
+          src="img/12.jpg"
+          alt="tatouage fleur dos complet"
+          data-popup="12"
+        />
+        <img
+          src="img/13.jpg"
+          alt="tatouage scarabé et crane"
+          data-popup="13"
+        />
+        <img src="img/14.jpg" alt="tatouage à l'oreille" data-popup="14" />
+        <img
+          src="img/15.jpg"
+          alt="tatouage couteau et visage"
+          data-popup="15"
+        />
+        <img
+          src="img/16.jpg"
+          alt="tatouage papillon de nuit et épingles"
+          data-popup="16"
+        />
+        <img
+          src="img/17.jpg"
+          alt="tatouage gravure ancienne"
+          data-popup="17"
+        />
+        <img src="img/18.jpg" alt="tatouage visage et fleur" data-popup="18" />
+        <img src="img/carousel4.jpeg" alt="tatouage E.T" data-popup="19" />
+        <img
+          src="img/carousel2.jpeg"
+          alt="tatouage gravure tempete"
+          data-popup="20"
+        />
+        <img
+          src="img/carousel3.jpeg"
+          alt="tatuage dos femme"
+          data-popup="21"
+        />
+      </div>
+      <!-- Popup container -->
+      <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-image" class="popup-content" />
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+      </div>
+      <!-- follow part -->
+      <section class="follow">
+        <div class="follow-logo">
+          <a
+            href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg=="
+            target="_blank"
+          >
+            <img src="logos/Instagram_icon.png.webp" alt="logo instagram"
+          /></a>
+        </div>
+        <div class="follow-title">
+          <a
+            href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg=="
+            target="_blank"
+          >
+            <h4>En voir plus sur Instagram</h4></a>
+        </div>
+      </section>
+    </section>
+    <img src="img/removebg.png" class="separator"  alt="ligne dorée séparation">
+    <!-- INFOS -->
+    <section id="infos">
+      <div class="info-content">
+            <h3>Informations</h3>
+      <div class="info-cards">
+        <div class="cards-container">
+          <div class="card">
+            <h2 class="card-title">Informations générales</h2>
+            <img src="img/testimage.jpg" alt="dessin insectes" class="card-image">
+            <p class="card-text">- Je ne tattoo pas les personnes mineurs <br> <br> - Veillez à bien regarder mon travail avant de prendre un rdv avec moi <br><br> - Le jour du RDV, n’oubliez pas votre pièce d’identitée </p>
+          </div>
+          
+          <div class="card">
+            <h2 class="card-title">Votre rendez-vous</h2>
+            <img src="img/pexels-cottonbro-4125672.jpg" alt="machine pour tatouer" class="card-image">
+            <p class="card-text-bis">  Le jour du tatouage, venez avec une tenue adaptée : <br><br>
+              Evitez le blanc, priviégiez des vêtements amples et adaptés à la zone que je vais vous tatouer. </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+      <div class="shop-content">
+        <h3>Le Shop</h3>
+      
+      <div class="map-shop">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5402.034469494274!2d0.6911356755160247!3d47.39209660276657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd5b183b3115f%3A0xe7a0301f9eff3899!2sSplit%20Tattoo%20%26%20Piercing!5e0!3m2!1sfr!2sfr!4v1731062787139!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h4 class="shop-name">Split Tattoo & Piercing</h4>
+        <p>56 rue Bernard Palissy , 37000 Tours<p>
+        </div>
+    </section>
+    <img src="img/removebg.png" class="separator"  alt="ligne dorée séparation">
+    <!-- CONTACT -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Pour toutes questions ou prise de rendez-vous, merci de prendre contact avec moi sur Instagram : </p>
+      <div class="insta-logo">
+        <a
+          href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg=="
+          target="_blank">
+          <img src="logos/Instagram_icon.png.webp" alt="logo instagram"/></a>
+      </div>
+    </section>
+    <img src="img/removebg.png" class="separator"  alt="ligne dorée séparation">
+    <!-- footer -->
+<footer>
+  <ul class="social-icon">
+    <li>
+      <a href="https://www.facebook.com/share/hzhQdZzzAzBViM3K/" target="_blank" aria-label="page Facebook Sophie LS Tattoo">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg==" target="_blank" aria-label="page Instagram Sophie LS Tattoo">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.tiktok.com/@sophie_laschnek?_t=8qxDZNoHVi5&_r=1" target="_blank" aria-label="page Titktok Sophie LS Tattoo">
+        <ion-icon name="logo-tiktok"></ion-icon>
+      </a>
+    </li>
+  </ul>
+<ul class="menu-footer">
+  <li><a href="#about">À propos</a></li>
+  <li><a href="#gallery">Galerie</a></li>
+  <li><a href="#infos">Infos</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+<p >©2025 Sophie La Schneck Tattoo - Tous droits réservés.</p>
+</footer>
+    <script src="index.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+<script  nomodule  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+  </body>
+</html>
